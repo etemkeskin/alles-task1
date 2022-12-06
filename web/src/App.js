@@ -6,6 +6,8 @@ import Layout from "./components/Layout/Layout";
 import Tickets from './pages/Tickets';
 import Ticket from './pages/Ticket';
 import NewTicket from './pages/NewTicket';
+import AdminTickets from './pages/admin/AdminTickets';
+import AdminTicket from './pages/admin/AdminTicket';
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
           <Route exact path="/tickets" element={<Tickets />}></Route>
           <Route exact path="/ticket/:id" element={<Ticket />}></Route>
           <Route exact path="/newTicket" element={<NewTicket />}></Route>
+          <Route exact path="/admin/tickets" element={<AdminTickets />}></Route>
+          <Route exact path="/admin/ticket/:id" element={<AdminTicket />}></Route>
         </Routes>
       </Layout>
     </BrowserRouter>

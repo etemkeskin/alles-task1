@@ -83,7 +83,7 @@ exports.update = async (req, res, next) => {
     try {
       const ticket = await Ticket.findOne({ _id: req.body.id, user: userId }).populate(
         "messages"
-      );;
+      );
   
       const newTicketMsg = new TicketMsg({
         message: req.body.message,

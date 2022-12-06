@@ -2,7 +2,6 @@ const User = require('../models/user');
 
 // Create and Save a new Product
 exports.create = async (req, res, next) => {
-    console.log (req.body.surname);
     const user = new User({
         name: req.body.name,
         surname: req.body.surname,

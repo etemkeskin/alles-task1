@@ -13,6 +13,3 @@ router.get("/:id", ticketsController.findOne);
 router.put("/:id", ticketsController.update);
 
 module.exports = router;
-
-// Retrieve all tickets
-// router.get("/users", usersController.findAll)

@@ -17,12 +17,12 @@ app.use((req, res, next) => {
 const users = require('./routes/users');
 const tickets = require('./routes/tickets');
 const auth = require('./routes/auth');
-// const admin = require('./routes/admin');
+const admin = require('./routes/admin');
 
 app.use('/users', users);
 app.use('/tickets', tickets);
 app.use('/auth', auth);
-// app.use('/admin/', admin);
+app.use('/admin', admin);
 
 mongoose.connect('mongodb://localhost:27017/alles',
     {
